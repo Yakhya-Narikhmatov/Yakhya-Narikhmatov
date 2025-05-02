@@ -1,58 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: white;
+    margin: calc(1rem);
+    background-color: rgb(34, 34, 34);
+    --spacing: .5rem;
+    color: white;
+    font-size: 14pt;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-.container {
-    width: 300px;
-    border: 5px solid black;
-    height: 350px;
-    background: white;
-    border-radius: 25px;
-    color: black;
-}
-
-.container h1 {
-    margin-top: 20px;
-    font-size: 36px;
+h1 {
     text-align: center;
-} 
+    display: block;
+    font-size: 2em;
+    margin-block: 0.67em;
+    margin-inline: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    margin: 0 auto;
+    row-gap: calc(1rem);
+    column-gap: calc(1rem);
+}
+
+.first-page {
+    display: flex;
+    align-items: center;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    padding: calc(1rem);
+    border-radius: calc(0.25rem);
+    width: 100%;
+    max-width: 50rem;
+}
+
+input {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#container {
+    padding: 0.5rem;
+    opacity: 0;
+    flex: 1;
+    color: var(--color);
+    width: 100%;
+}
 
 .box-1 {
-    width: 100%;
-    height: 50px;
-    margin: 30px;
+    padding: 0.5rem;
+    text-align: center;
 }
 
-.box-1 input {
-    width: 80%;
-    height: 75%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid black;
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-}
-
-.container .btn{
-    margin-top: 5px;
-    margin-left: 29%;
-    width: 130px;
-    height: 30px;
-    text-size-adjust: 20px;
-    background: white;
-    border-radius: 5px;
-} 
